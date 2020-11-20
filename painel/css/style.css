@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    background: rgb(214, 214, 255);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/*Página de Login*/
+.box-login{
+    max-width: 600px;
+    width: 95%;
+    padding: 80px 2%;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border-color: rgb(116, 116, 116);
+    box-shadow: 5px 10px 5px #ccc;
+}
+.box-login h2{
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 10px 0;
+    color: black;
+}
+
+/* Erro Box*/
+.box-login h3{
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 10px 0;
+    color: rgb(255, 0, 0);
+}
+.erro-box{
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 10px 0;
+    color: rgb(255, 0, 0);
+}
+
+.box-login input[type=text],
+.box-login input[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.box-login input[type=submit]{
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    background:#1976d2;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    
+}
+
+/*Fim página de login*/
+
+/*Painel de Controle*/
+
+.clear{clear:both;}
+
+.center{padding:0 2%;margin:0 auto;}
+
+header{
+	position: relative;
+	left: 250px;
+	padding: 10px 0;
+	background:#757eb4; 
+	width: calc(100% - 250px);
+}
+
+.content{
+	width: calc(100% - 250px);
+	position: relative;
+	left: 250px;
+	padding: 2%;
+}
+
+.loggout{
+	float: right;
+}
+
+.loggout a{
+	padding: 0 20px;
+	position: relative;
+	top: 4px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+
+.loggout a > span{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+.menu-btn{
+	float: left;
+	cursor: pointer;
+	font-size: 23px;
+    color: white;
+    margin-left: 2%;
+}
+.menu-wraper{width: 250px;}
+
+div.menu{
+	overflow-x:hidden;
+	overflow-y: auto;
+	height: 100%;
+	padding: 10px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #252c74;
+	float: left;
+	width: 250px;
+}
+
+div.box-usuario{
+    padding: 8px;
+    text-align: center;
+}
+
+.avatar-usuario{
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #061625;
+}
+
+.avatar-usuario i{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #061625;
+}
+.imagem-usuario{
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    position: relative;
+
+    
+}
+.imagem-usuario img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3.4px solid #061625;
+    box-shadow: 2px 2px 2px 2px rgb(39, 38, 38);
+}
+
+.nome-usuario{
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.nome-usuario p{
+	color: white;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+
+/*Conteúdo principal do painel*/
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 49%;
+}
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.box-content{
+	background: white;
+	padding: 30px;
+	margin-bottom: 25px;
+}
+
+.box-content h2{
+	font-weight: 300;
+	font-size: 23px;
+}
+
+.itens-menu{
+    margin-top: 30px;
+}
+
+.itens-menu h2{
+    text-align: left;
+    font-weight: normal;
+    font-size: 17px;
+    background: #0f2941;
+    color: rgb(218, 218, 218);
+    padding: 8px;
+}
+
+.itens-menu a{
+    display: block;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(228, 228, 228);
+    padding: 8px;
+    border-bottom: 2px solid #0f2941;
+}
+/*Box Metricas*/
+
+.box-metricas{
+	margin-top:16px;
+	padding:0 15px;
+}
+
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	background: #e2ab4d;
+	border: 5px solid white;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background: #e67062;
+}
+
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #249ae4;
+}
+
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wraper h2{
+	font-size: 28px;
+}
+
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 26px;
+}
+
+/*Tabela Responsiva*/
+.wraper-table{
+    overflow-x: auto;
+}
+table{
+    margin:20px 0;
+    min-width: 900px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-of-type(1){
+    background: #2665d9;
+    color: white;
+}
+
+table tr{
+    color:#555;
+    border-bottom: 1px solid #ccc;
+}
+
+table td{
+    padding: 12px;
+}
+table a.btn{
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0 6px;
+    color:white;
+}
+
+a.btn.edit{background: #f4bb3e;}
+a.btn.delete{background: #e05c4e;}
+a.btn.order{background:  #0091ea;}
+
+.table-responsive{
+    max-width: 1280px;
+    margin: 10px auto;
+}
+
+.table-responsive .row:nth-of-type(1){
+    font-weight: bold;
+    border-bottom:  1px solid #ccc;
+    padding: 8px;
+    background: rgb(32, 83, 178);
+    border-radius: 5px;
+    text-shadow: linen;
+    color: lightyellow;
+    
+}
+
+.table-responsive .row{
+    color: #555 ; 
+    padding-left: 5px;  
+    padding: 8px 10px;
+    border-bottom:  1px solid rgba(204, 204, 204, 0.24);
+    
+}
+.col{
+    float: left;
+    width: 50%;
+}
+
+.box-content form{
+    margin: 30px 0;
+}
+
+.box-content form label{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    display: block;
+}
+
+.box-content .form-group{
+    margin: 15px 0;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password]{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+
+.box-content form textarea{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.box-content form select{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+}
+
+.box-content form input[type=file]{
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+}
+
+.box-content form input[type=submit]{
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    background:#1976d2;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+/*Box de alerta*/
+
+.box-alert{
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+.sucesso{
+    color: white;
+    background: #00e676;
+}
+
+.erro{
+    color: white;
+    background: #F75353;
+}
+
+.menu-active{
+    background: #161a2e;
+}
+
+.menu-active::before{
+    content: '⇀ ';
+}
+
+.form-group-login label{
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+    padding-right: 5px;
+}
+
+.form-group input[type=date]{
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    width: 20%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+form .form-group-login:nth-of-type(2){
+    position: relative;
+    top: 10px;
+}
+
+
+
+/*Paginação*/
+
+
+.paginacao{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.paginacao a{
+    font-size: 14px;
+    margin: 0 8px;
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #666;
+}
+
+.paginacao a.page-selected{
+    background:rgb(220,220,220);
+}
+@media screen and (max-width: 1024px){
+	.box-metrica-single{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	
+	.content{
+		width: 100%;
+		left: 0;
+	}
+
+	header{
+		left: 0;
+		width: 100%;
+	}
+    .menu{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+	.w50{
+		width: 100%;
+	}
+
+	.box-single-metrica{
+		width: 100%;
+		padding-top: 40%;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.box-metrica-wraper h2{
+	font-size: 24px;
+	}
+
+	.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 22px;
+	}
+
+	.menu-wraper{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 380px){
+	.items-menu a{
+		font-size: 15px;
+	}
+}
